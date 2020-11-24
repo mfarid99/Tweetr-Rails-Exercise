@@ -827,3 +827,436 @@ Processing by TweetsController#index as */*
 Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1115)
 
 
+Started GET "/" for ::1 at 2020-11-24 17:18:44 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/moefarid/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/moefarid/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 295)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 1538)
+
+
+Started GET "/meta" for ::1 at 2020-11-24 17:18:51 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/app/controllers/meta_controller.rb:6: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/meta_controller.rb:6: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/meta_controller.rb:6: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/about" for ::1 at 2020-11-24 17:18:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/tweets" for ::1 at 2020-11-24 17:19:09 -0500
+Processing by TweetsController#index as HTML
+  [1m[36mTweet Load (0.8ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:6:in `index'
+Completed 200 OK in 17ms (Views: 5.5ms | ActiveRecord: 9.6ms | Allocations: 3990)
+
+
+Started GET "/meta" for ::1 at 2020-11-24 17:19:14 -0500
+  
+ActionController::RoutingError (uninitialized constant MetaController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/meta" for ::1 at 2020-11-24 17:20:07 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+  get '/meta', to: 'meta#about'
+      ^
+/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:5: syntax error, unexpected ',', expecting `end'
+  get '/meta', to: 'meta#about'
+             ^
+/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected ',', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected ',', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+Started GET "/meta" for ::1 at 2020-11-24 17:20:15 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/app/controllers/meta_controller.rb:6: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/meta_controller.rb:6: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/meta_controller.rb:6: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:20:30 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:7: syntax error, unexpected `end', expecting end-of-input
+Started GET "/meta" for ::1 at 2020-11-24 17:20:54 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:6: syntax error, unexpected `end'):
+  
+config/routes.rb:6: syntax error, unexpected `end'
+config/routes.rb:6: syntax error, unexpected `end'
+Started GET "/about" for ::1 at 2020-11-24 17:20:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/about" for ::1 at 2020-11-24 17:21:17 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:5: syntax error, unexpected ':', expecting `end'
+  resources: meta
+           ^
+/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:7: syntax error, unexpected `end'):
+  
+config/routes.rb:5: syntax error, unexpected ':', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end'
+config/routes.rb:5: syntax error, unexpected ':', expecting `end'
+config/routes.rb:7: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:21:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meta"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/meta" for ::1 at 2020-11-24 17:21:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meta"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/meta" for ::1 at 2020-11-24 17:21:33 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:6: syntax error, unexpected `end'):
+  
+config/routes.rb:6: syntax error, unexpected `end'
+config/routes.rb:6: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:21:47 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:7: syntax error, unexpected end-of-input):
+  
+config/routes.rb:7: syntax error, unexpected end-of-input
+config/routes.rb:7: syntax error, unexpected end-of-input
+Started GET "/meta" for ::1 at 2020-11-24 17:21:56 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:8: syntax error, unexpected `end'):
+  
+config/routes.rb:8: syntax error, unexpected `end'
+config/routes.rb:8: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:27:58 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:8: syntax error, unexpected `end'):
+  
+config/routes.rb:8: syntax error, unexpected `end'
+config/routes.rb:8: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:27:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meta"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/meta" for ::1 at 2020-11-24 17:28:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meta"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/rails/info/routes?path=s" for ::1 at 2020-11-24 17:28:04 -0500
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"s"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 458)
+
+
+Started GET "/meta" for ::1 at 2020-11-24 17:28:21 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:8: syntax error, unexpected `end'):
+  
+config/routes.rb:8: syntax error, unexpected `end'
+config/routes.rb:8: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:28:54 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:7: syntax error, unexpected end-of-input):
+  
+config/routes.rb:7: syntax error, unexpected end-of-input
+config/routes.rb:7: syntax error, unexpected end-of-input
+Started GET "/meta" for ::1 at 2020-11-24 17:31:33 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:8: syntax error, unexpected `end'
+  end
+  ^~~
+):
+  
+config/routes.rb:8: syntax error, unexpected `end'
+config/routes.rb:8: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:32:03 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:8: syntax error, unexpected `end'
+  end
+  ^~~
+):
+  
+config/routes.rb:8: syntax error, unexpected `end'
+config/routes.rb:8: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:32:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meta"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/meta" for ::1 at 2020-11-24 17:35:13 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:9: syntax error, unexpected `end'
+  end
+  ^~~
+):
+  
+config/routes.rb:9: syntax error, unexpected `end'
+config/routes.rb:9: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:35:26 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:9: syntax error, unexpected `end'
+  end
+  ^~~
+):
+  
+config/routes.rb:9: syntax error, unexpected `end'
+config/routes.rb:9: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:35:37 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:11: syntax error, unexpected end-of-input):
+  
+config/routes.rb:11: syntax error, unexpected end-of-input
+config/routes.rb:11: syntax error, unexpected end-of-input
+Started GET "/meta" for ::1 at 2020-11-24 17:35:48 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:8: syntax error, unexpected `end'
+  end
+  ^~~
+):
+  
+config/routes.rb:8: syntax error, unexpected `end'
+config/routes.rb:8: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:41:32 -0500
+  
+SyntaxError (/Users/moefarid/Desktop/Ruby/tweeter_app_api/config/routes.rb:8: syntax error, unexpected `end'
+  end
+  ^~~
+):
+  
+config/routes.rb:8: syntax error, unexpected `end'
+config/routes.rb:8: syntax error, unexpected `end'
+Started GET "/meta" for ::1 at 2020-11-24 17:41:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/meta"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-11-24 17:47:00 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/moefarid/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/moefarid/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.6ms | Allocations: 295)
+Completed 200 OK in 18ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 1538)
+
+
+Started GET "/meta" for ::1 at 2020-11-24 17:47:05 -0500
+Processing by MetaController#about as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 169)
+
+

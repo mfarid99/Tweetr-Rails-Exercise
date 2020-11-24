@@ -18,6 +18,12 @@ class TweetsController < ApplicationController
             render json: {tweet: tweet, errors: song.errors}
     end
 end
+
+    def update
+        @tweet.update(tweet_params)
+        render(json: {tweet: @tweet})
+    end
+
     private
 
     def tweet_params

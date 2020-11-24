@@ -33,3 +33,28 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 2255)
 
 
+Started GET "/tweets" for ::1 at 2020-11-23 20:20:39 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweetsController#index as HTML
+  [1m[36mTweet Load (0.5ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 4.8ms | ActiveRecord: 6.1ms | Allocations: 3771)
+
+
+Started GET "/tweets" for ::1 at 2020-11-23 20:22:31 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweetsController#index as HTML
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms | Allocations: 59687)
+
+
+  
+NameError (undefined local variable or method `songs' for #<TweetsController:0x00007faec405f3a0>):
+  
+app/controllers/tweets_controller.rb:5:in `index'
+Started GET "/tweets" for ::1 at 2020-11-23 20:22:47 -0500
+Processing by TweetsController#index as HTML
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 6.3ms | Allocations: 3887)
+
+
